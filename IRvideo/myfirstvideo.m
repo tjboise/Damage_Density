@@ -1,5 +1,5 @@
 %% Infrared video detection
-video=VideoReader('IMG_1121.MOV');
+video=VideoReader('/Users/zhangtianjie/Downloads/20210826_155757_IR.wmv');
 nFrames=video.NumFrames;  %get the frames
 H=video.Height;  %get the height
 W=video.Width;  %get the width
@@ -14,9 +14,5 @@ for i=1:nFrames
     BW = im2bw(P,level);
     %[areacount22,MajorAxis22,MinorAxis22,BW_seg,geshu,fuhe,stats]=tiqu(BW);
     %resultshow(P,geshu,fuhe,stats)
-
-    movv(i).cdata=BW;
-    movv(i).colormap=[];
+    figure,imshow(BW);
 end
-
-VideoWriter(movv,'aaa.avi');
