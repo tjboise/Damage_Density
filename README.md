@@ -25,4 +25,4 @@
 </div>
 
 
-4. **DamageDensity**: This file foler is to calculate the index "damage density" in a IR image🌳
+3. **DamageDensity**: This file foler is to calculate the index "damage density" in a IR image🌳
