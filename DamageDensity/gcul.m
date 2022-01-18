@@ -10,7 +10,7 @@ h=imrect;%use mouse get the ROI
 pos=getPosition(h);%get the position,
 I1 = imcrop( I1, pos );
 figure(1),imshow(I1);
-imwrite(I1,[pathname,dirc,'/original.jpg']);
+imwrite(I1,[pathname,dirc,'/original.jpg'],'jpg');
 %% get the location of the eage of defects
 K1=histeq(I1);
 imwrite(K1,[pathname,dirc,'/preprocess.jpg']);
