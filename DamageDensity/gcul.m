@@ -2,7 +2,7 @@
 %% read image
 [file_name, pathname] = uigetfile( '*.*','choose a file');
 I1 = imread([pathname,'/',file_name]); 
-dirc='test8';
+dirc='test1';
 %% crop the ROI
 [m, n, z] = size(I1);
 figure(1),imshow(I1);
@@ -10,17 +10,17 @@ h=imrect;%use mouse get the ROI
 pos=getPosition(h);%get the position,
 I1 = imcrop( I1, pos );
 figure(1),imshow(I1);
-imwrite(I1,[pathname,dirc,'/original.jpg'],'jpg');
+imwrite(I1,[pathname,dirc,'/original.jpg']);
 %% get the location of the eage of defects
 K1=histeq(I1);
 imwrite(K1,[pathname,dirc,'/preprocess.jpg']);
 % K1=rgb2gray(K1);
 level = graythresh(K1);
 BW = im2bw(K1,level);
-se=strel('square',10);
-se1=strel('square',10);
-BW=imdilate(BW,se);
-BW=imerode(BW,se1);
+%se=strel('square',10);
+%se1=strel('square',10);
+%BW=imdilate(BW,se);
+%BW=imerode(BW,se1);
 figure(2),imshow(BW);
 imwrite(BW,[pathname,dirc,'/bw.jpg']);
 [GX0,GY0]=gradient(BW);
