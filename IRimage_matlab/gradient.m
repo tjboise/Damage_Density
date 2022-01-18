@@ -1,6 +1,6 @@
 %主程序
 clear
-img=imread('/Users/zhangtianjie/Documents/GitHub/IR_image_process/IRimages/图片1.jpg');
+img=imread('/Users/zhangtianjie/Downloads/drive-download-20220118T042650Z-001/deck4.1.png');
 img1=rgb2gray(img);
 img2=img1;
 %[a,h]=contour(img,[133,133]);
