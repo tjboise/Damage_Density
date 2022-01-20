@@ -2,7 +2,16 @@
 clear
 %% read image
 [file_name, pathname] = uigetfile( '*.*','choose a file');
-img = imread([pathname,'/',file_name]); 
+I1 = imread([pathname,'/',file_name]); 
+dirc='test1';
+%% crop the ROI
+[m, n, z] = size(I1);
+figure(1),imshow(I1);
+h=imrect;%use mouse get the ROI
+pos=getPosition(h);%get the position,
+img = imcrop( I1, pos );
+%figure(1),imshow(I1);
+imwrite(img,[pathname,dirc,'/original_',file_name]);
 
 %img=imread('/Users/zhangtianjie/Downloads/drive-download-20220118T042650Z-001/deck4.1.png');
 img1=rgb2gray(img);
@@ -17,7 +26,7 @@ e=zeros(m,n);
 g=zeros(m,n);
 for i=1:m
     for j=1:n
-        if b(i,j)<120
+        if b(i,j)>160
             c(i,j)=b(i,j);
         else
             d(i,j)=b(i,j);
@@ -26,12 +35,12 @@ for i=1:m
 end
 for i=1:m
     for j=1:n
-        if c(i,j)>80
+        if c(i,j)<230
             e(i,j)=0;
         else
             e(i,j)=c(i,j);
         end
-        if c(i,j)>90
+        if c(i,j)<200
             g(i,j)=0;
         else
             g(i,j)=c(i,j);
@@ -65,6 +74,7 @@ ff(:,:,2)=floor(img1);
 ff(:,:,3)=floor(img1);
 %subplot(414),imshow(ff+uint8(f));
 figure,imshow(ff+uint8(f));
+imwrite(ff+uint8(f),[pathname,dirc,'/process_',file_name]);
 % hold on
 % for k = 1:length(B)
 %    boundary = B{k};
