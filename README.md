@@ -33,15 +33,22 @@
 
 *preprocess.m*: Evaluate the performance of different preprocess methods.
 
+*postprocess.m*: Evaluate the performance of different postprocess methods.
+
 *overallprocess.m*: The overall procedure to preprocess and segment the IR images. The results includes:
 
  1. all the processed images
  2. damages' area
 
+*area_account.m*: To get the damages' area.
+
+*gcul.m*: Calculate the gradient on the edge of damages.
+
 *gradient_main.m*: To process the pictures like.
 
 <div align="center">
-<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/kmeans.png" width=15%/> 
+<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimages/%E5%9B%BE%E7%89%871.jpg" width=15%/> 
 </div>
+
 
 
