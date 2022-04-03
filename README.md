@@ -26,3 +26,10 @@
 
 
 3. **DamageDensity**: This file foler is to calculate the index "damage density" in a IR image🌳
+
+*preprocess.m*: Evaluate the performance of different preprocess methods.
+
+*overallprocess.m*: The overall procedure to preprocess and segment the IR images. The results includes:
+
+ 1. all the processed images
+ 2. damages' area
