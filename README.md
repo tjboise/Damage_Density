@@ -3,6 +3,9 @@
 ---
 
 1. **IRvideo**: This file folder is mainly used to process videos🌵
+
+---
+
 2. **IRimage**: This file folder is mainly used to process images.
 - *boundary_image.m*: segment objects by find the boundary of the object.
 <div align="center">
@@ -24,6 +27,7 @@
 <img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/Global_threshold.jpg" width=15%/> 
 </div>
 
+---
 
 3. **DamageDensity**: This file foler is to calculate the index "damage density" in a IR image🌳
 
@@ -33,3 +37,11 @@
 
  1. all the processed images
  2. damages' area
+
+*gradient_main.m*: To process the pictures like.
+
+<div align="center">
+<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/kmeans.png" width=15%/> 
+</div>
+
+
