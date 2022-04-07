@@ -6,15 +6,18 @@
 
 ---
 
-2. **IRimage**: This file folder is mainly used to process images.
-- *boundary_image.m*: segment objects by find the boundary of the object.
+2. **IRimage_matlab**+**IRimage_opencv**: This two file folders are mainly used to process images.
+
+#### Mainly included three main kinds of image processing methods:
+
+- *boundary_image.m*: segment objects **by find the boundary of the object**.
 <div align="center">
 <img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/boundary_image1.jpg" width=15%/> 
 <img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/boundary_image2.jpg" width=15%/>
 <img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/boundary_image3.jpg" width=35%/>  
 </div>
 
-- *K_means1.m*: use k-means algorithm to segment the boundary of the object.
+- *K_means1.m*:  segment objects **by clustering**.
 <div align="center">
 <img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/kmeans.png" width=15%/> 
 <img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/kmeans1.png" width=15%/>
@@ -24,7 +27,7 @@
 ![image](https://user-images.githubusercontent.com/95270677/162312473-ed69729b-dd03-4235-b690-8f128d4dab98.png)
 </div>
 
-- *Globalthresholdseg.m*: use global threshold to segment the boundary of the object.
+- *Globalthresholdseg.m*: segment objects by **global threshold**.
 <div align="center">
 <img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/Global_threshold.jpg" width=15%/> 
 </div>
