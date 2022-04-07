@@ -20,6 +20,8 @@
 <img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/kmeans1.png" width=15%/>
 <img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/kmeans2.png" width=15%/>
 <img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/kmeans3.png" width=15%/> 
+ 
+![image](https://user-images.githubusercontent.com/95270677/162312473-ed69729b-dd03-4235-b690-8f128d4dab98.png)
 </div>
 
 - *Globalthresholdseg.m*: use global threshold to segment the boundary of the object.
