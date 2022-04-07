@@ -55,8 +55,11 @@ Framework to calculate the damage density in infrastructure
 
 *gcul.m*: Calculate the gradient on the edge of damages.
 
-The accuracy of the damage density index.
+The accuracy of the damage density index was tested in lab.
 
+<div align="center">
+<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimages/damageindex_images/volume1.png" width=60%/> 
+</div>
 
 
 
