@@ -36,7 +36,7 @@
 Framework to calculate the damage density in infrastructure
 
 <div align="center">
-<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimages/damageindex_images/framework.png" width=15%/> 
+<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimages/damageindex_images/framework.png" width=60%/> 
 </div>
 
 
@@ -54,6 +54,13 @@ Framework to calculate the damage density in infrastructure
 *area_account.m*: To get the damages' area.
 
 *gcul.m*: Calculate the gradient on the edge of damages.
+
+The accuracy of the damage density index.
+
+
+
+
+---
 
 *gradient_main.m*: To process the pictures like.
 
