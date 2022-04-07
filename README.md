@@ -36,7 +36,7 @@
 Framework to calculate the damage density in infrastructure
 
 <div align="center">
-<img src="" width=15%/> 
+<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimages/damageindex_images/framework.png" width=15%/> 
 </div>
 
 
