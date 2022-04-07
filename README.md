@@ -33,6 +33,15 @@
 
 3. **DamageDensity**: This file foler is to calculate the index "damage density" in a IR image🌳
 
+Framework to calculate the damage density in infrastructure
+
+<div align="center">
+<img src="" width=15%/> 
+</div>
+
+
+
+
 *preprocess.m*: Evaluate the performance of different preprocess methods.
 
 *postprocess.m*: Evaluate the performance of different postprocess methods.
