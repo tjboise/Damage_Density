@@ -1,7 +1,7 @@
 %% Global threshold segmentation
 
 count=0;
-f=imread('/Users/zhangtianjie/Documents/MATLAB/IRsegment/o1.jpg');
+f=imread('/Users/zhangtianjie/Documents/Github/IR_image_process/IRimage_matlab/o1.jpg');
 T=mean2(f);
 done=false;
 while ~done
