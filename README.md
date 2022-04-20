@@ -1,12 +1,10 @@
-### This repository includes some methods to process images or videos from IR camera.
+### The purpose of this repository is to process the IR_images obtained from civil infrastructures, analyze and transfer the results to what engineers and decision-makers needed.
+
+This repository includes some methods to process images or videos from IR camera.
 
 ---
 
-1. **IRvideo**: This file folder is mainly used to process videos🌵
-
----
-
-2. **IRimage_matlab**+**IRimage_opencv**: This two file folders are mainly used to process images.
+1. **IRimage_matlab**+**IRimage_opencv**: This two file folders are mainly used to process images.
 
 #### Mainly included three main kinds of image processing methods:
 
@@ -72,6 +70,9 @@ The accuracy of the damage density index was tested in lab.
 </div>
 
 
+---
+
+1. **IRvideo**: This file folder is mainly used to process videos🌵
 
 ---
 
