@@ -1,10 +1,17 @@
 ### The purpose of this repository is to process the IR_images obtained from civil infrastructures, analyze and transfer the results to what engineers and decision-makers needed.
-
-This repository includes some methods to process images or videos from IR camera.
-
 ---
 
-1. **IRimage_matlab**+**IRimage_opencv**: This two file folders are mainly used to process images.
+**A demo:**
+
+The original image is like this:
+<div align="center">
+<img src="https://github.com/TianjieZhang1993/IRI_image_process/blob/main/IRimages/oriimg/21inch-135-2nd.jpg" width=30%/> 
+</div>
+
+---
+**First, the segmentation methods:**
+
+ **IRimage_matlab**+**IRimage_opencv**: These two file folders are mainly used to process and segment images.
 
 #### Mainly included three main kinds of image processing methods:
 
@@ -32,7 +39,9 @@ This repository includes some methods to process images or videos from IR camera
 
 ---
 
-3. **DamageDensity**: This file foler is to calculate the index "damage density" in a IR image🌳
+An new index was proposed to quantify the defects intensity.
+
+ **DamageDensity**: This file foler is to calculate the index "damage density" in a IR image🌳
 
 Framework to calculate the damage density in infrastructure
 
