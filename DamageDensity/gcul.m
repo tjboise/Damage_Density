@@ -44,10 +44,10 @@ h=imrect;%use mouse get the ROI
 pos=getPosition(h);%get the position,
 I1 = imcrop( I1, pos );
 %figure(1),imshow(I1);
-imwrite(I1,[pathname,dirc,'/original_',file_name]);
+%imwrite(I1,[pathname,dirc,'/original_',file_name]);
 %% get the location of the eage of defects
 K1=histeq(I1);
-imwrite(K1,[pathname,dirc,'/preprocess_',file_name]);
+%imwrite(K1,[pathname,dirc,'/preprocess_',file_name]);
 % K1=rgb2gray(K1);
 %%
 %level = graythresh(K1);
@@ -59,10 +59,10 @@ BW = im2bw(K1,level);
 %BW=imdilate(BW,se);
 %BW=imerode(BW,se1);
 figure(2),imshow(BW);
-imwrite(BW,[pathname,dirc,'/bw_',file_name]);
+%imwrite(BW,[pathname,dirc,'/bw_',file_name]);
 [GX0,GY0]=gradient(BW);
 G0=sqrt(GX0.*GX0+GY0.*GY0);
-imwrite(G0,[pathname,dirc,'/edge_',file_name]);
+%imwrite(G0,[pathname,dirc,'/edge_',file_name]);
 figure(3),imshow(G0);
 %% calculate the gradient
 [areacount,MajorAxis,MinorAxis,BW_seg,geshu,fuhe,stats]=tiqu(BW);
@@ -77,9 +77,9 @@ mean_gradient=mean(G);
 mean_gradient1=mean(G(x));% get the mean gradient
 sum_gradient=sum(G(x));
 figure(4),imshow(G);
-imwrite(G,[pathname,dirc,'/Gradientoriginal_',file_name]);
+%imwrite(G,[pathname,dirc,'/Gradientoriginal_',file_name]);
 G1=mat2gray(G);
-imwrite(G1,[pathname,dirc,'/Gradient_',file_name]);
+%imwrite(G1,[pathname,dirc,'/Gradient_',file_name]);
 figure(5),imshow(G1);
 % mean_gradient=mean(G(x));% get the mean gradient
 % sum_gradient=sum(G(x));

@@ -1,5 +1,19 @@
+%% import image
+[file_name, pathname] = uigetfile( '*.*','choose a file');
+I1 = imread([pathname,'/',file_name]); 
+
+%% crop the ROI
+[m, n, z] = size(I1);
+figure(1),imshow(I1)%original
+
+h=imrect;%use mouse get the ROI
+pos=getPosition(h);%get the position,
+%pos有四个值，分别是矩形框的左下角点的坐标 x y 和 框的 宽度和高度
+
+I1 = imcrop( I1, pos );
+rgb=I1
 %% find the boundary of the image
-rgb=imread('o1.jpg'); % read the original image 
+%rgb=imread('o1.jpg'); % read the original image 
 I=rgb2gray(rgb); %convert to gray scale image 
 figure;subplot(121); %show the gray scale image 
 imshow(I);
