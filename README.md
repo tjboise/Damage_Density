@@ -72,15 +72,10 @@ The accuracy of the damage density index was tested in lab.
 
 ---
 
-1. **IRvideo**: This file folder is mainly used to process videos🌵
+2. **IRvideo**: This file folder is mainly used to process videos🌵
 
 ---
 
-*gradient_main.m*: To process the pictures like.
-
-<div align="center">
-<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimages/%E5%9B%BE%E7%89%871.jpg" width=15%/> 
-</div>
 
 
 
