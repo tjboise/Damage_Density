@@ -36,6 +36,29 @@ Framework to calculate the damage density in infrastructure
 
 
 
+
+---
+
+
+
+
+Results of some lab tests: 
+
+<div align="center">
+<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimages/damageindex_images/dd.png" width=60%/> 
+</div>
+
+
+It was shown that the index damage density has a positive linear relationship (the correlation coefficient is 0.94) with total
+volumes of the subsurface voids in the detection area compared to traditional image segmentation methods. 
+
+<div align="center">
+<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimages/damageindex_images/volume1.png" width=60%/> 
+</div>
+
+
+---
+
 ---
 **First, the image process method:**
 
@@ -71,29 +94,6 @@ The original image is like this:
 <div align="center">
 <img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimage_matlab/Global_threshold.jpg" width=15%/> 
 </div>
-
----
-
-
-
-
-Results of some lab tests: 
-
-<div align="center">
-<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimages/damageindex_images/dd.png" width=60%/> 
-</div>
-
-
-It was shown that the index damage density has a positive linear relationship (the correlation coefficient is 0.94) with total
-volumes of the subsurface voids in the detection area compared to traditional image segmentation methods. 
-
-<div align="center">
-<img src="https://github.com/TianjieZhang1993/IRimage_Club/blob/main/IRimages/damageindex_images/volume1.png" width=60%/> 
-</div>
-
-
----
-
 
 
 
