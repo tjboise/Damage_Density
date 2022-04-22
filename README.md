@@ -60,7 +60,7 @@ volumes of the subsurface voids in the detection area compared to traditional im
 ---
 
 ---
-**First, the image process method:**
+**The image process method:**
 
 **A demo:**
 
