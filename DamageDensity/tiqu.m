@@ -42,9 +42,16 @@ for k=1:NUM
 end
 
 geshu=length(fuhe);
-disp('脱空部位总数为：')
+disp('-------------------------------')
+disp('The number of defects：')
 disp(geshu)
-disp('个')%识别个数
-areacount;
- MajorAxis;
- MinorAxis;
+disp('-------------------------------')
+disp('The area of defects：')
+disp(areacount)
+disp('-------------------------------')
+disp('The length of defects：')
+disp(MajorAxis)
+disp('-------------------------------')
+disp('The width of defects：') 
+disp(MinorAxis)
+disp('-------------------------------')
