@@ -4,6 +4,8 @@ I1 = imread([pathname,'/',file_name]);
 
 %% crop the ROI
 [m, n, z] = size(I1);
+disp('size')
+disp(m*n)
 figure(1),imshow(I1)%original
 
 h=imrect;%use mouse get the ROI
@@ -19,11 +21,12 @@ imwrite(K,[pathname,'/','histeq.jpg']);
 
 %% segment
 level = graythresh(K);
+level=level+0.14
 BW = im2bw(K,level);
 imwrite(BW,[pathname,'/','segmented_image.jpg']);
 %% postprocess
-A22=imdilate(BW,strel('diamond',10));
-A22=imerode(A22,strel('diamond',5));
+A22=imdilate(BW,strel('diamond',3));
+A22=imerode(A22,strel('diamond',3));
 imwrite(A22,[pathname,'/','postprocess.jpg']);
 %% account area
 image_in=A22;
@@ -46,10 +49,13 @@ imwrite(G0,[pathname,'/','edge.jpg']);
 x=find(G0~=0);
 
 %% calculate the mean gradient of the edge in raw image
-mean_gradient1=mean(G(x));% get the mean gradient
+mean_gradient1=mean(G1(x));% get the mean gradient
 
 disp('mean_gradient:')
 disp(mean_gradient1)
 
 
-
+damage_density=mean_gradient1*sum(areacount)/(m*n);
+disp('----------------')
+disp('damage density')
+disp(damage_density)

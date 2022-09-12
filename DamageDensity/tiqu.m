@@ -22,7 +22,7 @@ for k=1:NUM
     %floor(x):不超过x 的最大整数
     
 
-            if  S(k)>700 && bizhi(k)<4 %&& S(k)<90000
+            if  S(k)>4000 && bizhi(k)<4 %&& S(k)<90000
              
                   fuhe=[fuhe,k];
                   areacount=[areacount,S(k)];
